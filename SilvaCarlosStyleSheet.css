@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+    background-color: #EDF2F4;
+    margin: auto;
+    font-size: x-large;
+    color: #EDF2F4;
+    width: 50%;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    background-color: #2b2d42;
+    text-align: center;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #EF233C;
+
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    width: 12%;
+    text-decoration: none;
+    color: D90429;
+    padding: 14px 50px 14px 50px;
+    border-bottom: 3px solid transparent;
+}
+
+#navbar a:hover {
+    background-color: #EDF2F4;
+    color: #28587B;
+
+    border-bottom: 3px solid black;
+}
+
+#navbar a.active {
+    background-color: black;
+    color: white;
+    border-bottom: 3px solid #EF233C;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 50%;
+}
+
+.sticky+main {
+    margin-top: 140px;
+}
+
+.content {
+    background-color: #2b2d42;
+    margin: 80px 0 80px 0;
+    padding: 50px;
+}
+
+p {
+    margin: 0;
+    padding: 30px 0 30px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+
+a {
+    color: #EDF2F4;
+}
+
+img {
+    background-color: #D90429;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #8D99AE;
+    padding: 50px;
+}
+
+footer>span {
+
+    display: block;
+    text-align: center;
+    padding: 8px;
+}
