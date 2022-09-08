@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Table, Build Your Own Computer">
+    <meta name="keywords" content="Table, PC, Build, Computer Parts">
+    <meta name="author" content="Carlos Silva">
+    <title>Form|My First PC</title>
+    <link rel="stylesheet" type="text/css" href="SilvaCarlosStyleSheet.css">
+</head>
+
+<body>
+    <h1>My First PC</h1>
+    <ul class="nav">
+        <li><a href="SilvaCarlosHomePage.html">Home</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a class="active" href="form.html">Form</a></li>
+        <li style="float:right"><a href="about.html">About</a></li>
+    </ul>
+    <main>
+        <h3>We would like to get to know you better, and what exactly you're looking to build!</h3>
+        <form method="post" action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+            <fieldset>
+                <legend>Name</legend>
+                First name:<br>
+                <input type="text" name="firstname"><br>
+                Last name:<br>
+                <input type="text" name="lastname"><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>PC building experience</legend>
+                The truth is: <br>
+                <input type="radio" name="experience" value="beginner">I have no clue what I'm doing<br>
+                <input type="radio" name="experience" value="intermediate">I have built my on pc before<br>
+                <input type="radio" name="experience" value="advanced">I monitor the core temps for my CPU and GPU<br>
+                <input type="radio" name="experience" value="savant">I made sure my PSU had adequate voltage to
+                crossfire my GPU's<br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>What will you be using this PC for?</legend>
+                I want to use it for:<br>
+                <input type="checkbox" name="use" value="gaming">Gaming<br>
+                <input type="checkbox" name="use" value="videoediting">Video Editing<br>
+                <input type="checkbox" name="use" value="graphicdesign">Graphic Design<br>
+                <input type="checkbox" name="use" value="video">Watching videos or movies<br>
+                <input type="checkbox" name="use" value="video">Editing documents or homework
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>What brand CPU do you want?</legend>
+                I want:<br>
+                <select name="tbd">
+                    <option value="choose">Choose One</option>
+                    <option value="amd">AMD</option>
+                    <option value="nvidia">Intel</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Pick your GPU</legend>
+                I want the:<br>
+                <select name="parts" multiple>
+                    <option value="3090">Nvidia GTX 3090</option>
+                    <option value="3080">Nvidia GTX 3080</option>
+                    <option value="3070">Nvidia GTX 3070</option>
+                    <option value="3060">Nvidia GTX 3060</option>
+                    <option value="2080">Nvidia GTX 2080</option>
+                    <option value="2070">Nvidia GTX 2070</option>
+                    <option value="2060">Nvidia GTX 2060</option>
+                    <option value="2050">Nvidia GTX 2050</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Anything else you want us to know about?</legend>
+                well:<br>
+                <textarea name="extra" cols="30" rows="10">
+                    enter your comments here...
+                </textarea>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+
+        </form>
+    </main>
+    <footer>
+        <span class="boldtext "><a class="flink" href="#"><img class="icon" src="icon2.svg" alt="facebook icon"><span
+                    class="smedia">
+                    Facebook</span></a></span>
+        <span class="boldtext "><a class="flink" href="#"><img class="icon" src="icon1.svg" alt="instagram icon"><span
+                    class="smedia">
+                    Instagram</span></a></span>
+        <span id="copyright">© Copyright</span>
+    </footer>
+</body>
+
+</html>
