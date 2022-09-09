@@ -4,7 +4,7 @@ body {
     background-color: #EDF2F4;
     font-size: x-large;
     color: #EDF2F4;
-    width: 70%;
+    width: 65%;
     margin: auto;
 }
 
@@ -22,7 +22,6 @@ h1 {
     margin: 0;
     padding: 0;
     background-color: #EF233C;
-    z-index: 100;
 }
 
 .nav>li>a {
@@ -31,7 +30,6 @@ h1 {
     text-align: center;
     text-decoration: none;
     padding: 14px 50px 14px 50px;
-
     color: #EDF2F4;
     border-bottom: 3px solid transparent;
 }
@@ -50,11 +48,11 @@ h1 {
 }
 
 main {
-    background-color: #2b2d42;
+    box-sizing: border-box;
     width: 100%;
-    padding: 50px 0;
-    /* margin: 80px 0 80px 0; */
-    /* padding: 80px; */
+    background-color: #2b2d42;
+    margin: 80px 0 80px 0;
+    padding: 80px;
 }
 
 p {
@@ -66,13 +64,13 @@ p {
 
 }
 
+a {
+    text-decoration: none;
+}
+
 .aboutimg {
     width: 47%;
     height: auto;
-}
-
-a {
-    text-decoration: none;
 }
 
 footer {
@@ -127,9 +125,6 @@ span.italictext {
 /* the following is for the editing of the table */
 
 table {
-    width: 90%;
-    margin: 0 auto;
-
     background-color: #976d72;
 }
 
@@ -142,17 +137,44 @@ td {
 
 th,
 td {
-    width: 20%;
+
     text-align: center;
     vertical-align: middle;
+}
+
+td>ul {
+
+    margin: 0;
+    /* padding: 25px; */
 }
 
 .sticky {
     position: fixed;
     top: 0;
-    width: 70%;
+    width: 65%;
 }
 
 .sticky+main {
     margin-top: 140px;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        width: 75%;
+
+    }
+
+    .sticky {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        width: 100%;
+    }
+
+    .sticky {
+        width: 100%;
+    }
 }
