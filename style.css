@@ -158,6 +158,11 @@ td>ul {
     margin-top: 140px;
 }
 
+.my-media {
+    display: block;
+    margin: 0 auto;
+}
+
 @media only screen and (max-width: 1000px) {
     body {
         width: 75%;
