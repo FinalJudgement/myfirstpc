@@ -4,7 +4,7 @@ body {
     background-color: #EDF2F4;
     font-size: x-large;
     color: #EDF2F4;
-    width: 65%;
+    width: 50%;
     margin: auto;
 }
 
@@ -22,6 +22,7 @@ h1 {
     margin: 0;
     padding: 0;
     background-color: #EF233C;
+    z-index: 1;
 }
 
 .nav>li>a {
@@ -48,8 +49,6 @@ h1 {
 }
 
 main {
-    box-sizing: border-box;
-    width: 100%;
     background-color: #2b2d42;
     margin: 80px 0 80px 0;
     padding: 80px;
@@ -57,7 +56,6 @@ main {
 
 p {
     text-align: justify;
-    text-justify: auto;
     font-family: 'Roboto', sans-serif;
     font-size: x-large;
     padding: 30px 0 30px 0;
@@ -68,14 +66,11 @@ a {
     text-decoration: none;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
-}
-
 .aboutimg {
     width: 47%;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
+    border-radius: .5em;
 }
 
 footer {
@@ -130,6 +125,7 @@ span.italictext {
 /* the following is for the editing of the table */
 
 table {
+    width: 100%;
     background-color: #976d72;
 }
 
@@ -142,49 +138,85 @@ td {
 
 th,
 td {
-
+    padding: 20px;
     text-align: center;
     vertical-align: middle;
 }
 
 td>ul {
-
     margin: 0;
-    /* padding: 25px; */
+    padding: 0;
 }
 
 .sticky {
     position: fixed;
     top: 0;
-    width: 65%;
+    width: 50%;
 }
 
 .sticky+main {
     margin-top: 140px;
 }
 
-.my-media {
-    display: block;
-    margin: 0 auto;
+.hpImg {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5em;
 }
 
-@media only screen and (max-width: 1000px) {
-    body {
-        width: 75%;
-
-    }
-
-    .sticky {
-        width: 75%;
-    }
+.aboutp {
+    width: 48%;
 }
 
-@media only screen and (max-width: 850px) {
-    body {
-        width: 100%;
-    }
+#date-time {
+    position: fixed;
+    top: 9vh;
+    left: 6.3vw;
+    background-color: #ef233ba8;
+    font-size: .8em;
+    border-radius: 2em;
+    height: 50px;
+    color: black;
+}
 
-    .sticky {
-        width: 100%;
-    }
+#date-time:hover {
+    background-color: #ef233bf3;
+    box-shadow: 3px 3px 1px 2px black;
+    border: 5px solid rgba(255, 255, 255, 0.603);
+    color: white;
+}
+
+#demo {
+    position: fixed;
+    left: 4vw;
+    top: 22.5vh;
+    width: 14vw;
+    font-size: 1em;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0, .82);
+}
+
+.invis {
+    visibility: hidden;
+
+}
+
+#secret-message {
+    position: fixed;
+    top: 49%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 20vw;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(0, 0, 0);
+    border-radius: 1em;
+}
+
+#my-video {
+    width: 100%;
 }

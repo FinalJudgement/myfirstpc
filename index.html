@@ -7,11 +7,21 @@
     <meta name="keywords" content="PC, Build, Computer Parts">
     <meta name="author" content="Carlos Silva">
     <title>My First PC</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="SilvaCarlosStyleSheet.css">
 </head>
 
 <body>
-    <h1>My First PC</h1>
+    <button id='date-time' type="button"
+        onclick="document.querySelector('#demo').innerHTML = Date(), document.querySelector('#demo').innerHTML = Date(), document.querySelector('#demo').classList.toggle('invis')">
+        Display Date and Time</button>
+    <p id="demo" class="invis"></p>
+    <div id="secret-message"
+        onmouseover="style.backgroundColor='rgb(0,0,0,.82)', style.color='white', document.querySelector('#secret-message').innerHTML = 'Upon this screen you now see me, to unravel what\'s next continue to read me, there\'s treasures unseen beneath this surface, to obtain the knowlege to create with purpose, the gifts we obtain we must use it for good, for with knowlege comes power often misunderstood, but with persistence and diligence you can unlock these treasures, to press toward the mark amidst trials and pressures. ~ Will you make the difference?' "
+        onmouseout="style.backgroundColor='rgb(0,0,0,0)',style.color='black',document.querySelector('#secret-message').innerHTML = 'Mouse Over Me!'">
+        Mouse Over Me!</div>
+
+    <h1 onmouseover="style.color= '#EF233C'" onmouseout="style.color='#EDF2F4'">My First PC
+    </h1>
     <ul id="navbar" class="nav">
         <li><a class="active" href="SilvaCarlosHomePage.html">Home</a></li>
         <li><a href="table.html">Table</a></li>
@@ -22,14 +32,14 @@
         <h1>Media</h1>
         <h4>Here is a short clip of me getting a pentakill in my favorite game League of Legends!</h4>
 
-        <video class="my-media" width="90%" height="auto" controls>
+        <video id='my-video' height="500" controls>
             <source src="video1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
         <h4>Enjoy one of the songs that I listen to when I'm gaming!</h4>
 
-        <audio class="my-media" controls>
+        <audio id='my-audio' autoplay controls>
             <source src="audio1.mp3" type="audio/mpeg">
         </audio>
         <br>
@@ -52,14 +62,14 @@
         <p>
             Just to name a few.
         </p>
-        <img src="img1.jpg" width="60%" alt="Corsair Liquid Cooling">
+        <img class='hpImg' src="img1.jpg" alt="Corsair Liquid Cooling">
         <p>
             Now you might be thinking, lights? who the heck cares about lights? Well, I
             was just kidding about the lights part. The truth is you don't need them... but
             you should get them anyway because they make your computer look like a
             spaceship and let's be honest. Everyone loves spaceships!
         </p>
-        <img src="img2.jpg" width="80%" alt="dual monitor PC setup">
+        <img class='hpImg' src="img2.jpg" alt="dual monitor PC setup">
 
         <p>
             Seriously though, maybe you've found yourself wondering why you're unable
@@ -72,7 +82,7 @@
             tomorrow. Building a PC can help solve many of these problems so you
             can focus on what truly matters to you.
         </p>
-        <img src="img3.jpg" width="60%" alt="white case with tempered glass">
+        <img class='hpImg' src="img3.jpg" alt="white case with tempered glass">
 
         <p>
             Now don't get me wrong. Just because you are building a computer doesn't
@@ -284,6 +294,11 @@
                 navbar.classList.remove('sticky')
             }
         }
+
+        const audio = document.querySelector('#my-audio');
+        audio.volume = 0.001;
+        const video = document.querySelector('#my-video');
+        video.volume = 0.01;
 
     </script>
 </body>
